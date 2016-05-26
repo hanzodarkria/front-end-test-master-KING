@@ -1,0 +1,9 @@
+<div class="AddCustomer row">
+	<form name="addCustomerForm">
+    	<input type="text" placeholder="Name" ng-model="customer.name" class="form-control" required/>
+	    <select ng-options="product.name for product in products" ng-model="customer.product" placeholder="Product" class="form-control" required>
+	        <option value="">Choose Product</option>
+	    </select>
+	    <button ng-click="add()" class="btn btn-primary" ng-disabled="!addCustomerForm.$valid">Add</button>
+    </form>
+</div>

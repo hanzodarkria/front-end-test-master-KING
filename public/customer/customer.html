@@ -1,0 +1,7 @@
+<div class="Customer">
+	<span>{{ customer.name }}</span>
+    <span>{{ customer.product.name }}</span>
+    <span>{{ customer.queuedTime }}</span>
+    <button ng-click="serve(customer.id)" ng-show="onServed()" class="btn btn-default">Serve</button>
+	<button ng-click="remove()" ng-show="onRemoved()" class="btn btn-default">Remove</button>
+</div>
